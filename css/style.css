@@ -1,0 +1,20 @@
+.calculator__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 3rem);
+    grid-template-rows: repeat(5, 3rem);
+    gap: .4rem;
+
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3rem;
+        width: 3rem;
+        border: 1px #000 solid;
+        border-radius: 100%;
+    }
+}
+
+.d-none {
+    display: none;
+}

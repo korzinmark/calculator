@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="calculator">
+        <div class="calculator__display">0</div>
+
+        <div class="calculator__grid">
+            <button type="button" class="btn" aria-label="Delete">
+                <svg class="icon">
+                    <use href="#icon-delete"></use>
+                </svg>
+            </button>
+            <button type="button" class="btn">AC</button>
+            <button type="button" class="btn" aria-label="Percent">
+                <svg class="icon">
+                    <use href="#icon-percent"></use>
+                </svg>
+            </button>
+            <button type="button" class="btn btn--operator" aria-label="Divide">
+                <svg class="icon">
+                    <use href="#icon-divide"></use>
+                </svg>
+            </button>
+
+            <button type="button" class="btn">7</button>
+            <button type="button" class="btn">8</button>
+            <button type="button" class="btn">9</button>
+            <button type="button" class="btn btn--operator" aria-label="Multiply">
+                <svg class="icon">
+                    <use href="#icon-x"></use>
+                </svg>
+            </button>
+
+            <button type="button" class="btn">4</button>
+            <button type="button" class="btn">5</button>
+            <button type="button" class="btn">6</button>
+            <button type="button" class="btn btn--operator" aria-label="Subtract">
+                <svg class="icon">
+                    <use href="#icon-minus"></use>
+                </svg>
+            </button>
+
+            <button type="button" class="btn">1</button>
+            <button type="button" class="btn">2</button>
+            <button type="button" class="btn">3</button>
+            <button type="button" class="btn btn--operator" aria-label="Add">
+                <svg class="icon">
+                    <use href="#icon-plus"></use>
+                </svg>
+            </button>
+
+            <button type="button" class="btn" aria-label="Toggle Sign">
+                <svg class="icon">
+                    <use href="#icon-plus-minus"></use>
+                </svg>
+            </button>
+            <button type="button" class="btn">0</button>
+            <button type="button" class="btn" aria-label="Decimal point">.</button>
+            <button type="button" class="btn btn--equals" aria-label="Equals">
+                <svg class="icon">
+                    <use href="#icon-equal"></use>
+                </svg>
+            </button>
+        </div>
+    </main>
+
+    <svg class="d-none">
+        <symbol id="icon-delete" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+                d="M10 5a2 2 0 0 0-1.344.519l-6.328 5.74a1 1 0 0 0 0 1.481l6.328 5.741A2 2 0 0 0 10 19h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z" />
+            <path d="m12 9 6 6" />
+            <path d="m18 9-6 6" />
+        </symbol>
+
+        <symbol id="icon-percent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" x2="5" y1="5" y2="19" />
+            <circle cx="6.5" cy="6.5" r="2.5" />
+            <circle cx="17.5" cy="17.5" r="2.5" />
+        </symbol>
+
+        <symbol id="icon-divide" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="6" r="1" />
+            <line x1="5" x2="19" y1="12" y2="12" />
+            <circle cx="12" cy="18" r="1" />
+        </symbol>
+
+        <symbol id="icon-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+        </symbol>
+
+        <symbol id="icon-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14" />
+        </symbol>
+
+        <symbol id="icon-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14" />
+            <path d="M12 5v14" />
+        </symbol>
+
+        <symbol id="icon-plus-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3v10" />
+            <path d="M7 8h10" />
+            <path d="M5 19h14" />
+        </symbol>
+
+        <symbol id="icon-equal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" x2="19" y1="9" y2="9" />
+            <line x1="5" x2="19" y1="15" y2="15" />
+        </symbol>
+    </svg>
+</body>
+
+</html>
