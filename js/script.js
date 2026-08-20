@@ -12,7 +12,9 @@ calcGrid.addEventListener('click', (e) => {
     const key = btn.dataset.key;
 
     if (Number.isInteger(+key)) {
-        clearBtn.textContent = 'C';
+        if (calcDisplay.textContent === 'AC') {
+            clearBtn.textContent = 'C';
+        }
 
         if (calcDisplay.textContent === '0') {
             calcDisplay.textContent = '';
@@ -26,9 +28,18 @@ calcGrid.addEventListener('click', (e) => {
 
     } else if (key === 'add') {
         if (!calcDisplay.textContent.endsWith('+')) {
+            const match = calcDisplay.textContent.match(/\d+$/);
+            const lastNumber = match ? match[0] : null;
+
             calcDisplay.textContent += '+';
-            result += parseInt(calcDisplay.textContent);
+
+            result += +lastNumber;
+
             console.log(result);
         }
+    } else if (key === 'equals') {
+        const lastSign = calcDisplay.textContent.match(/[-+*/]/g)?.at(-1) || null;
+
+        calcDisplay.textContent = result;
     }
 });
