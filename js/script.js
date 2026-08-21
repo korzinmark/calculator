@@ -47,13 +47,14 @@ calcGrid.addEventListener('click', (e) => {
                 }
             } else {
                 result += +lastNumber;
-                calcDisplay.textContent += '+';
             }
 
             if (isPressedEqualBtn) {
                 result = 0;
                 isPressedEqualBtn = false;
             }
+
+            calcDisplay.textContent += '+';
 
             console.log(result);
         }
@@ -78,15 +79,20 @@ calcGrid.addEventListener('click', (e) => {
                 } else {
                     result -= +lastNumber;
                 }
-
-                calcDisplay.textContent += '-';
             }
 
             if (isFirstMinus) {
                 isFirstMinus = false;
             }
 
+            calcDisplay.textContent += '-';
+
             console.log(result);
+        }
+
+    } else if (key === 'multiply') {
+        if (!calcDisplay.textContent.endsWith('x')) {
+            calcDisplay.textContent += '×';
         }
 
     } else if (key === 'equals') {
